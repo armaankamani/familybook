@@ -1,0 +1,24 @@
+<html>
+    <head><title>family book</title></head>
+    <body>
+        <center><img  id="family" src="http://prodimage.images-bn.com/pimages/9780316070409_p0_v1_s1200x630.jpg">
+            <h2 id="f1">welcome</h2>
+    <br><button type="next" onclick="nextslide()"> move </button></center>
+    </body>
+    <script>
+        var images=["https://cdn.vectorstock.com/i/1000x1000/41/26/game-show-host-announcer-vector-1444126.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1200px-A_Happy_Working_Mom_Cartoon.svg.png",
+        "https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-7.jpg"
+        ];
+        var names=["DAD","MOM","ME"];
+        var i=0;
+        function nextslide(){
+        if(i>2){
+            i=0;
+        }
+        document.getElementById("family").src=images[i];
+        document.getElementById("f1").innerHTML=names[i];
+        i++;
+        }
+        
+    </script>
+</html>
